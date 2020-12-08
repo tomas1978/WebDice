@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<title>Dice simulation</title>
+		
 	</head
 	<body>
 		<h1>Simulation of two dice</h1>
@@ -11,9 +12,12 @@
 		<p> To run a simulation, please enter the number of dice rolls in the field below and
 			push the button. </p>
 		<form>
-			<input></input>
-			<button>Roll dice!</button>
+			<input id="simulationsInput"></input>
+			<button id="simulationButton" onClick="changeText()">Roll dice!</button>
 		</form>
 		<h2>Results</h2>
+		<p><div id="test">Test</div></p>
+		
+		<script src="diceSimulation.js"></script>
 	</body>
 </html>
