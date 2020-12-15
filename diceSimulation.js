@@ -1,11 +1,14 @@
 //var simButton=document.getElementById("simulationButton");
-//simButton.onClick"changeText()";
+//simButton.onClick="changeText()";
 
 let results=new Array(0,0,0,0,0,0);
 var res="";
 simulate(1000);
+console.log(writeResult());
+document.getElementById("res").innerHTML=writeResult();
 
-function simulate(simulations) {
+
+function simulate(simulations) {	
 	for(var i=0;i<simulations;i++) {
 		let result=Math.floor(Math.random() * 6) + 1;
 		results[result-1]++;
@@ -14,13 +17,14 @@ function simulate(simulations) {
 }
 
 function writeResult() {
-	for(var i=0;i<6;i++) {
-		Console.log(i+": "+results[i])
-	}
+	resultString="";
+	resultString="Ettor: "+results[0]+"\n"+"Tvåor: "+results[1]+"\n"+"Treor: "+results[2]+"\n"
+					+"Fyror: "+results[3]+"\n"+"Femmor: "+results[4]+"\n" + "Sexor: "+results[5];
+	return resultString;
 }
 
 function changeText() {
-	var element = document.getElementById("test");
+	var element = document.getElementById("result");
 	element.innerHTML="Hello World";
 	console.log("TESTING TESTING!");
 }
