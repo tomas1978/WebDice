@@ -5,7 +5,8 @@ let results=new Array(0,0,0,0,0,0);
 var res="";
 simulate(1000);
 console.log(writeResult());
-document.getElementById("res").innerHTML=writeResult();
+document.getElementById("res").innerHTML=calcResult();
+writeResult();
 
 
 function simulate(simulations) {	
@@ -16,11 +17,18 @@ function simulate(simulations) {
 	console.log(results);
 }
 
-function writeResult() {
+function calcResult() {
 	resultString="";
 	resultString="Ettor: "+results[0]+"\n"+"Tvåor: "+results[1]+"\n"+"Treor: "+results[2]+"\n"
 					+"Fyror: "+results[3]+"\n"+"Femmor: "+results[4]+"\n" + "Sexor: "+results[5];
 	return resultString;
+}
+
+function writeResult() {
+	for(var i=0;i<6;i++) {
+		document.getElementById(1+i).innerHTML=results[i];
+		document.getElementById(11+i).innerHTML=results[i]/results.length;
+	}
 }
 
 function changeText() {
