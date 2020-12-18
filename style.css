@@ -14,3 +14,7 @@ h2 {
 	font-size: 18px;
 	font-weight: bold;
 }
+
+table, th, td {
+	border: 1px solid;
+}
