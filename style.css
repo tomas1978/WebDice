@@ -18,3 +18,9 @@ h2 {
 table, th, td {
 	border: 1px solid;
 }
+
+button {
+	font-family: arial;
+	border-radius: 55px;
+	background-color: lime;
+}
