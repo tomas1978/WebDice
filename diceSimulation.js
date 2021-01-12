@@ -3,7 +3,9 @@
 
 let results=new Array(0,0,0,0,0,0);
 var res="";
-simulate(1000);
+var numberOfSimulations=document.getElementById("simulationsInput").value;
+console.log(numberOfSimulations);
+simulate(numberOfSimulations);
 console.log(writeResult());
 document.getElementById("res").innerHTML=calcResult();
 writeResult();
