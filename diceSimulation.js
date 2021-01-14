@@ -1,5 +1,7 @@
 var simButton=document.getElementById("simulationButton");
-//simButton.addEventListener("click",changeText);
+simButton.addEventListener("click",changeText);
+
+/*
 simButton.addEventListener("click",function() {
 	var numberOfSimulations=document.getElementById("simulations").value;
 	console.log("Klickat på knappen!!!!");
@@ -7,13 +9,14 @@ simButton.addEventListener("click",function() {
 	
 	simulate(numberOfSimulations);
 });
+*/
 
 
 let results=new Array(0,0,0,0,0,0);
 var res="";
 var numberOfSimulations=document.getElementById("simulationsInput").value;
 console.log(numberOfSimulations);
-simulate(numberOfSimulations);
+//simulate(numberOfSimulations);
 console.log(writeResult());
 document.getElementById("res").innerHTML=calcResult();
 writeResult();
@@ -45,9 +48,12 @@ function changeText() {
 	//var element = document.getElementById("result");
 	//element.innerHTML="Hello World";
 	//console.log("TESTING TESTING!");
-	//window.open(http://www.google.com);
-	var numberOfSimulations=document.getElementById("simulationsInput").value;
+	
+	var numberOfSimulations=document.getElementById("simulations").value;
 	console.log(numberOfSimulations);
 	simulate(numberOfSimulations);
+	writeResult();
+	console.log(results);
+	//window.open("result.html");
 }
 
