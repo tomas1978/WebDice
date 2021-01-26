@@ -19,7 +19,12 @@ table, th, td {
 	border: 1px solid;
 }
 
-button {
+.inputform {
+	font-family: arial;
+	font-size: 20px;
+}
+
+/* button {
 	font-family: arial;
 	font-size: 18px;
 	border-radius: 55px;
@@ -30,3 +35,5 @@ input {
 	font-family: arial;
 	font-size: 18px;
 }
+
+*/
