@@ -17,23 +17,10 @@ h2 {
 
 table, th, td {
 	border: 1px solid;
+	padding: 4px;
 }
 
 .inputform {
 	font-family: arial;
 	font-size: 20px;
 }
-
-/* button {
-	font-family: arial;
-	font-size: 18px;
-	border-radius: 55px;
-	background-color: lime;
-}
-
-input {
-	font-family: arial;
-	font-size: 18px;
-}
-
-*/
