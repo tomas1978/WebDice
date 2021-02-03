@@ -29,8 +29,8 @@ function simulate(simulations) {
 
 function calcResult() {
 	resultString="";
-	resultString="Ettor: "+results[0]+"\n"+"Tvåor: "+results[1]+"\n"+"Treor: "+results[2]+"\n"
-					+"Fyror: "+results[3]+"\n"+"Femmor: "+results[4]+"\n" + "Sexor: "+results[5];
+	resultString="One: "+results[0]+"\n"+"Two: "+results[1]+"\n"+"Three: "+results[2]+"\n"
+					+"Four: "+results[3]+"\n"+"Five: "+results[4]+"\n" + "Six: "+results[5];
 	return resultString;
 }
 
