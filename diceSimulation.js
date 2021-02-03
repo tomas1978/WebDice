@@ -1,5 +1,5 @@
 var simButton=document.getElementById("simulationButton");
-//simButton.addEventListener("click",changeText);
+
 simButton.addEventListener("click",function() {
 	var numberOfSimulations=document.getElementById("simulations").value;
 	console.log("Klickat på knappen!!!!");
@@ -37,15 +37,11 @@ function calcResult() {
 function writeResult() {
 	for(var i=0;i<6;i++) {
 		document.getElementById(1+i).innerHTML=results[i];
-		document.getElementById(11+i).innerHTML=results[i]/results.length;
+		document.getElementById(11+i).innerHTML=results[i]/numberOfSimulations;
 	}
 }
 
 function changeText() {
-	//var element = document.getElementById("result");
-	//element.innerHTML="Hello World";
-	//console.log("TESTING TESTING!");
-	//window.open(http://www.google.com);
 	var numberOfSimulations=document.getElementById("simulationsInput").value;
 	console.log(numberOfSimulations);
 	simulate(numberOfSimulations);
