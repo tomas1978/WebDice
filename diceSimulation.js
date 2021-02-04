@@ -6,6 +6,7 @@ simButton.addEventListener("click",function() {
 	console.log(numberOfSimulations);
 	
 	simulate(numberOfSimulations);
+	writeResult();
 });
 
 
@@ -14,8 +15,8 @@ var res="";
 var numberOfSimulations=document.getElementById("simulationsInput").value;
 console.log(numberOfSimulations);
 simulate(numberOfSimulations);
-console.log(writeResult());
-document.getElementById("res").innerHTML=calcResult();
+//console.log(writeResult());
+document.getElementById("result").innerHTML=calcResult();
 writeResult();
 
 
