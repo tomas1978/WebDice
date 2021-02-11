@@ -17,7 +17,7 @@ var res="";
 var numberOfSimulations=document.getElementById("simulationsInput").value;
 console.log(numberOfSimulations);
 simulate(numberOfSimulations);
-//console.log(writeResult());
+
 document.getElementById("result").innerHTML=calcResult();
 if(numberOfSimulations>0)
 	writeResult();
