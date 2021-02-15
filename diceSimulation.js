@@ -44,10 +44,3 @@ function writeResult() {
 		document.getElementById(11+i).innerHTML=results[i]/numberOfSimulations;
 	}
 }
-
-function changeText() {
-	var numberOfSimulations=document.getElementById("simulationsInput").value;
-	console.log(numberOfSimulations);
-	simulate(numberOfSimulations);
-}
-
