@@ -18,7 +18,7 @@ var numberOfSimulations=document.getElementById("simulationsInput").value;
 console.log(numberOfSimulations);
 simulate(numberOfSimulations);
 
-document.getElementById("result").innerHTML=calcResult();
+document.getElementById("result").innerHTML=showResult();
 if(numberOfSimulations>0)
 	writeResult();
 
@@ -31,7 +31,7 @@ function simulate(simulations) {
 	console.log(results);
 }
 
-function calcResult() {
+function showResult() {
 	resultString="";
 	resultString="One: "+results[0]+"\n"+"Two: "+results[1]+"\n"+"Three: "+results[2]+"\n"
 					+"Four: "+results[3]+"\n"+"Five: "+results[4]+"\n" + "Six: "+results[5];
