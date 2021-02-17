@@ -22,7 +22,11 @@ table, th, td {
 	padding: 4px;
 }
 
+img {
+	padding: 16px;
+}
+
 .inputform {
 	font-family: arial;
-	font-size: 20px;
+	font-size: 36px;
 }
